@@ -6,8 +6,8 @@ geolocator = Nominatim(user_agent="EP_coordinates")
 #Read the xlsx file
 path_file="data.xlsx"
 col_types = {"COUNTRY":str,"POSTALCODE":str}
-hoja = "Hoja1"
-df = pd.read_excel(path_file,sheet_name=hoja,dtype=col_types)
+sheet_name = "Hoja1"
+df = pd.read_excel(path_file,sheet_name=sheet_name,dtype=col_types)
 
 #List of colums
 col1 = []
@@ -33,7 +33,7 @@ print(r1)
 print('\n'*2)
 
 #Write outfile xlsx
-outfile = "Resultados1.xlsx"
+outfile = "result.xlsx"
 writer = pd.ExcelWriter(outfile, engine ='xlsxwriter')
 r1.to_excel(writer, sheet_name ='Sheet1')
 writer.save()
