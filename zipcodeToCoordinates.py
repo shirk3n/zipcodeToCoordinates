@@ -9,8 +9,6 @@ col_types = {"COUNTRY":str,"POSTALCODE":str}
 hoja = "Hoja1"
 df = pd.read_excel(path_file,sheet_name=hoja,dtype=col_types)
 
-print(geolocator.geocode("Santiago 37 ES"))
-
 #List of colums
 col1 = []
 col2 = []
