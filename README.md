@@ -8,4 +8,5 @@ Geolocation: **Geocoder** and **Geopy - Nominatim**.
 Excel: **pandas**.  
 
 ### Notes: 
-The entry of the datasheet file has to have the colums: **COUNTRY** and **POSTALCODE** 
+-The entry of the datasheet file has to have the colums: **COUNTRY** and **POSTALCODE**  
+-The data of the datasheet should be in text format
